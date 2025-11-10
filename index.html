@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mina Kamil — Portfolio</title>
+
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="backdrop"><div class="gradient-blobs"></div></div>
+
+<div class="wrapper">
+
+  <!-- NAV -->
+  <nav class="reveal" style="opacity:1;transform:none">
+    <div class="brand">
+      <div class="logo">MK</div>
+      <div style="font-weight:800;color:var(--neon-blue)">Mina Kamil</div>
+    </div>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="cta">
+      <a href="Mina_Kamil_DEV_Flutter_CV.pdf" download><i class="fa-solid fa-download" style="margin-right:8px"></i>Download CV</a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="about" class="header-card reveal" style="transition-delay:0.06s">
+    <div class="avatar">
+      <img src="avatar.jpg" alt="Mina Kamil Avatar" onerror="this.style.display='none'">
+    </div>
+
+    <div class="header-info">
+      <div class="h-name">Mina Kamil Fahmy</div>
+      <div class="h-role">Mobile Software Engineer | Flutter Developer & Instructor</div>
+      <div class="h-meta">
+        <div>📍 Cairo, Egypt</div>
+        <div>·</div>
+        <div>✉️ <a href="mailto:menakamil.dev8@gmail.com" style="color:var(--neon-blue);text-decoration:underline">mena.m4077@gmail.com</a></div>
+        <div>·</div>
+        <div>📱 +20 128 992 5152</div>
+      </div>
+
+      <div class="info-row" style="margin-top:16px">
+        <div class="info-box">
+          <b>Location</b>
+          Cairo, Egypt
+        </div>
+        <div class="info-box">
+          <b>Availability</b>
+          Freelancer · Immediate
+        </div>
+        <div class="info-box">
+          <b>Experience</b>
+          3+ Years (Flutter)
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN GRID -->
+  <div class="main-grid">
+
+    <!-- LEFT COLUMN -->
+    <div>
+      <section class="card reveal" style="transition-delay:0.10s">
+        <div class="section-title">About Me</div>
+        <p class="lead">I build high-performance, scalable mobile apps with clean architecture and modern UI.
+3+ years experience | Real production apps on Google Play | Passionate about teaching Flutter
+</p>
+
+        <div class="stats">
+          <div class="stat">3+ Years experience</div>
+          <div class="stat">5+ Projects</div>
+          <div class="stat">Instructor</div>
+        </div>
+
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="overview">Overview</button>
+          <button class="tab-btn" data-tab="experience">Experience</button>
+          <button class="tab-btn" data-tab="projects">Projects</button>
+        </div>
+
+        <div id="overview" class="tab-panel" style="margin-top:12px">
+          <p class="lead">Enthusiastic senior software developer and instructor with practical expertise in Flutter. Committed to developing
+creative solutions for mobile applications, backed by 3 years of experience in software development.
+</p>
+        </div>
+
+        <div id="experience" class="tab-panel" style="display:none;margin-top:12px;color:var(--muted)">
+          <ul style="list-style:none;padding:0;margin:0">
+            <li style="margin-bottom:12px"><b>InCode</b>     Sept 2022 – Present<br><span style="color:var(--muted)"><b>Senior Flutter Developer</b>
+<li>•	Refactored features to enhance scalability, maintainability, and user experience.</li>
+•	Led code reviews, performance optimizations, and adherence to best practices.
+•	Conducted technical interviews and established coding standards for quality.
+</span></li>
+            <li style="margin-bottom:12px"><b>Flutter Trainee</b> — Orange Digital Center & Machinfy Academy (2022–2023)<br><span style="color:var(--muted)">Completed bootcamps and assisted peers in workshops.</span></li>
+            <li style="margin-bottom:12px"><b>Instructor</b> — 2024 – Present<br><span style="color:var(--muted)">Hands-on Flutter & Dart sessions and mentorship.</span></li>
+          </ul>
+        </div>
+
+        <div id="projects-panel" class="tab-panel" style="display:none;margin-top:12px">
+          <div class="list">
+            <div class="item">
+              <div class="icon"><i class="fa-solid fa-book-bible"></i></div>
+              <div><b>Bible Verses Ordering Game</b><div class="small-muted" style="color:var(--muted)">Drag-and-drop game. <a href="https://play.google.com/store/apps/details?id=com.minakamil.dev.aner_astaner" target="_blank" style="color:var(--neon-blue)">Play Store</a></div></div>
+            </div>
+
+            <div class="item">
+              <div class="icon"><i class="fa-solid fa-pen-to-square"></i></div>
+              <div><b>Exam & Quiz App</b><div class="small-muted" style="color:var(--muted)">Timers, leaderboard, and audio feedback.</div></div>
+            </div>
+
+            <div class="item">
+              <div class="icon"><i class="fa-solid fa-plane-departure"></i></div>
+              <div><b>Traveling App</b><div class="small-muted" style="color:var(--muted)"><a href="https://github.com/Mina8496/Traveling_app" target="_blank" style="color:var(--neon-blue)">GitHub</a></div></div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="card reveal" style="margin-top:18px;transition-delay:0.16s" id="projects">
+        <div class="section-title">Highlighted Projects</div>
+
+        <div class="item">
+          <div class="icon"><i class="fa-solid fa-gamepad"></i></div>
+          <div><b>Bible Verses Ordering Game</b><div class="small-muted" style="color:var(--muted)">Interactive game, scoring and music.</div></div>
+        </div>
+
+        <div class="item" style="margin-top:12px">
+          <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <div><b>Exam & Quiz App</b><div class="small-muted" style="color:var(--muted)">Realtime results, leaderboard and Firebase integration.</div></div>
+        </div>
+
+        <div style="margin-top:14px">
+          <a class="cta" href="Mina_Kamil_CV.pdf" download style="text-decoration:none"><span style="display:inline-block;padding:10px 14px;border-radius:12px;background:linear-gradient(90deg,var(--neon-blue),var(--neon-purple));color:#061023;font-weight:800;box-shadow:0 14px 44px rgba(139,92,246,0.12)">Download Full CV</span></a>
+        </div>
+      </section>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <aside>
+      <div class="card reveal" style="transition-delay:0.12s">
+        <div class="section-title">Skills</div>
+        <div class="skills">
+          <div class="skill-tag">Flutter</div>
+          <div class="skill-tag alt">Dart</div>
+          <div class="skill-tag">Bloc / Cubit</div>
+          <div class="skill-tag">Firebase</div>
+          <div class="skill-tag">REST APIs</div>
+          <div class="skill-tag alt">UI / UX</div>
+        </div>
+
+        <div style="margin-top:16px" class="section-title">Contact</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
+          <a class="socials" href="mailto:mena.m4077@gmail.com" aria-label="email"><i class="fa-solid fa-envelope"></i></a>
+          <a class="socials" href="tel:+201289925125" aria-label="phone"><i class="fa-solid fa-phone"></i></a>
+          <a class="socials" href="https://www.linkedin.com/in/mina-kamil-1b816a2a3/" target="_blank" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="socials" href="https://github.com/Mina8496" target="_blank" aria-label="github"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="card reveal" style="margin-top:18px;transition-delay:0.18s">
+        <div class="section-title">Hobbies</div>
+        <div class="hobbies" style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap">
+          <div class="item" style="align-items:center;gap:8px"><div style="width:36px;height:36px;border-radius:8px;background:linear-gradient(90deg,var(--neon-purple),var(--neon-blue);display:flex;align-items:center;justify-content:center;color:#061023"><i class="fa-solid fa-book open"></i></div> <div style="color:var(--muted);font-weight:700">Reading</div></div>
+          <div class="item" style="align-items:center;gap:8px"><div style="width:36px;height:36px;border-radius:8px;background:linear-gradient(90deg,var(--neon-blue),var(--neon-purple));display:flex;align-items:center;justify-content:center;color:#061023"><i class="fa-solid fa-code"></i></div> <div style="color:var(--muted);font-weight:700">Coding</div></div>
+          <div class="item" style="align-items:center;gap:8px"><div style="width:36px;height:36px;border-radius:8px;background:linear-gradient(90deg,var(--neon-pink),var(--neon-purple));display:flex;align-items:center;justify-content:center;color:#061023"><i class="fa-solid fa-music"></i></div> <div style="color:var(--muted);font-weight:700">Music</div></div>
+        </div>
+      </div>
+
+      <div class="card reveal" style="margin-top:18px;transition-delay:0.22s">
+        <div class="section-title">Education</div>
+        <div style="margin-top:8px;color:var(--muted)">
+          <b>Bachelor of Science in Computers and Information.</b><br>Arab Open University (AOU Egypt), 2019–2023<br>GPA: 2.73
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+</div>
+
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
