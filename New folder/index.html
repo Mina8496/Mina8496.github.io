@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mina Kamil Fahmy | Flutter Developer</title>
+  <meta name="description"
+    content="Flutter developer in New Cairo, Egypt. Production-ready mobile apps with Clean Architecture, Bloc/Cubit, Firebase, REST APIs and payment gateways. Apps live on Google Play." />
+  <meta name="theme-color" content="#F4F7FB" />
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230468D7'/%3E%3Ctext x='32' y='42' font-size='28' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EMK%3C/text%3E%3C/svg%3E" />
+
+  <!-- Runs before paint: theme, splash state, and a safety net if script.js fails to load -->
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var saved = localStorage.getItem('theme');
+        var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        d.dataset.theme = saved || (dark ? 'dark' : 'light');
+      } catch (e) { }
+      try {
+        if (sessionStorage.getItem('seen') || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          d.classList.add('no-splash');
+        }
+      } catch (e) { }
+      setTimeout(function () {
+        if (!window.__appReady) d.classList.add('ready', 'force-show');
+      }, 3500);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Intro splash (shown once per visit) -->
+  <div class="splash" aria-hidden="true">
+    <div class="splash-mark">MK</div>
+    <div class="splash-bar"><span></span></div>
+  </div>
+
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Mina Kamil, back to top">
+        <span class="brand-mark">MK</span>
+        <span class="brand-name">Mina Kamil</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch between light and dark theme">
+          <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+        </button>
+        <a class="btn btn-primary btn-sm" href="Mina_Kamil_Software_Developer_Flutter_CV.pdf" download>
+          <i class="fa-solid fa-download" aria-hidden="true"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <span class="blob blob-1" aria-hidden="true"></span>
+      <span class="blob blob-2" aria-hidden="true"></span>
+      <span class="blob blob-3" aria-hidden="true"></span>
+
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="status hero-anim" style="--n:1"><span class="status-dot" aria-hidden="true"></span> Available for
+            freelance projects, starting immediately</p>
+          <p class="hero-name hero-anim" style="--n:2">Mina Kamil Fahmy, New Cairo, Egypt</p>
+          <h1>Flutter developer building production-ready mobile apps</h1>
+          <p class="lede hero-anim" style="--n:5">I build apps with Clean Architecture and Bloc/Cubit, Provider,
+            Riverpod, backed by Firebase, REST APIs, payment gateways and on-device machine learning. Two of them are
+            live on Google Play.</p>
+
+          <p class="typed-line hero-anim" style="--n:6">
+            <span class="typed-label">Right now I'm working with</span>
+            <span class="typed-wrap"><span class="typed"
+                data-words='["Flutter &amp; Dart","Clean Architecture","Bloc / Cubit","Provider","Riverpod","Firebase","REST APIs","Stripe &amp; Paymob","TensorFlow Lite"]'>Flutter
+                &amp; Dart</span><span class="caret" aria-hidden="true"></span></span>
+          </p>
+
+          <div class="hero-cta hero-anim" style="--n:7">
+            <a class="btn btn-primary" href="Mina_Kamil_Software_Developer_Flutter_CV.pdf" download data-magnetic>
+              <i class="fa-solid fa-download" aria-hidden="true"></i> Download CV
+            </a>
+            <a class="btn btn-ghost" href="#projects" data-magnetic>See projects</a>
+            <div class="social-row">
+              <a class="social" href="https://github.com/Mina8496" target="_blank" rel="noopener"
+                aria-label="GitHub profile" data-magnetic><i class="fa-brands fa-github"></i></a>
+              <a class="social" href="https://www.linkedin.com/in/mina-kamil/" target="_blank" rel="noopener"
+                aria-label="LinkedIn profile" data-magnetic><i class="fa-brands fa-linkedin"></i></a>
+              <a class="social" href="mailto:minakamil.dev8@gmail.com" aria-label="Send an email" data-magnetic><i
+                  class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <ul class="facts hero-anim" style="--n:8">
+            <!-- <li><strong><span data-count="32" data-projects-total>32</span></strong><span>apps and projects built</span></li> -->
+            <li><strong><span data-count="32">32</span></strong><span>apps and projects built</span></li>
+            <li><strong><span data-count="2">2</span></strong><span>apps on Google Play</span></li>
+          </ul>
+        </div>
+
+        <!-- Developer stage: code, live API call, app states, architecture (decorative) -->
+        <div class="stage" aria-hidden="true">
+          <div class="stage-inner">
+
+            <div class="float-chip fc-1" style="--d:1.5s"><i class="fa-solid fa-cubes"></i> Bloc / Cubit</div>
+            <div class="float-chip fc-2" style="--d:1.8s"><i class="fa-solid fa-cloud-arrow-down"></i> REST APIs</div>
+            <div class="float-chip fc-3" style="--d:2.1s"><i class="fa-solid fa-fire"></i> Firebase</div>
+
+            <!-- Code editor -->
+            <div class="win win-code">
+              <div class="win-bar"><span class="d"></span><span class="d"></span><span class="d"></span><span
+                  class="win-title">products_cubit.dart</span></div>
+              <div class="code">
+                <span class="ln" style="--l:0"><span class="k">class</span> <span class="t">ProductsCubit</span> <span
+                    class="k">extends</span> <span class="t">Cubit</span>&lt;<span class="t">State</span>&gt; {</span>
+                <span class="ln" style="--l:1"> <span class="k">final</span> <span class="t">Repo</span> repo;</span>
+                <span class="ln" style="--l:2"></span>
+                <span class="ln" style="--l:3"> <span class="t">Future</span>&lt;<span class="k">void</span>&gt; <span
+                    class="f">load</span>() <span class="k">async</span> {</span>
+                <span class="ln" style="--l:4"> <span class="f">emit</span>(<span class="t">Loading</span>());</span>
+                <span class="ln" style="--l:5"> <span class="k">final</span> res = <span class="k">await</span>
+                  repo.<span class="f">get</span>();</span>
+                <span class="ln" style="--l:6"> res.<span class="f">fold</span>(</span>
+                <span class="ln" style="--l:7"> (e) =&gt; <span class="f">emit</span>(<span
+                    class="t">Failure</span>(e)),</span>
+                <span class="ln" style="--l:8"> (d) =&gt; <span class="f">emit</span>(<span
+                    class="t">Success</span>(d)),</span>
+                <span class="ln" style="--l:9"> );</span>
+                <span class="ln" style="--l:10"> }</span>
+                <span class="ln" style="--l:11">}<span class="caret-block"></span></span>
+              </div>
+            </div>
+
+            <!-- Live API call -->
+            <div class="win win-api">
+              <div class="win-bar"><span class="d"></span><span class="d"></span><span class="d"></span><span
+                  class="win-title">network</span></div>
+              <div class="api-body">
+                <div class="api-head"><span class="method">GET</span><span class="path">/api/products</span></div>
+                <div class="api-status">
+                  <span class="st st-load"><i class="fa-solid fa-spinner"></i> Loading...</span>
+                  <span class="st st-ok"><i class="fa-solid fa-circle-check"></i> 200 OK &middot; 124 ms</span>
+                  <span class="st st-err"><i class="fa-solid fa-circle-xmark"></i> 504 Timeout</span>
+                </div>
+                <div class="json"><span class="c">{</span>
+                  <span class="s">"id"</span>: <span class="p">12</span>,
+                  <span class="s">"title"</span>: <span class="s">"Wireless Mouse"</span>,
+                  <span class="s">"price"</span>: <span class="p">24.99</span>
+                  <span class="c">}</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- App screen driven by the states -->
+            <div class="phone">
+              <div class="screen">
+                <div class="notch"></div>
+                <div class="app-bar app-bar-blue">
+                  <span>Products</span>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="state-row">
+                  <span>state:</span>
+                  <span class="state-stack">
+                    <span class="state state-load">ProductsLoading</span>
+                    <span class="state state-ok">ProductsSuccess</span>
+                    <span class="state state-err">ProductsFailure</span>
+                  </span>
+                </div>
+                <div class="view">
+                  <div class="v v-load">
+                    <div class="item-row"><span class="thumb shimmer"></span><span class="sk-lines"><span
+                          class="sk shimmer"></span><span class="sk sk-s shimmer"></span></span></div>
+                    <div class="item-row"><span class="thumb shimmer"></span><span class="sk-lines"><span
+                          class="sk shimmer"></span><span class="sk sk-s shimmer"></span></span></div>
+                    <div class="item-row"><span class="thumb shimmer"></span><span class="sk-lines"><span
+                          class="sk shimmer"></span><span class="sk sk-s shimmer"></span></span></div>
+                  </div>
+                  <div class="v v-ok">
+                    <div class="item-row"><span class="thumb"></span><span><span class="item-t">Wireless
+                          Mouse</span><br><span class="item-p">In stock</span></span><span class="price">$24.99</span>
+                    </div>
+                    <div class="item-row"><span class="thumb g2"></span><span><span class="item-t">Mechanical
+                          Keyboard</span><br><span class="item-p">In stock</span></span><span class="price">$79</span>
+                    </div>
+                    <div class="item-row"><span class="thumb g3"></span><span><span class="item-t">USB-C
+                          Hub</span><br><span class="item-p">Low stock</span></span><span class="price">$34</span></div>
+                  </div>
+                  <div class="v v-err">
+                    <div>
+                      <i class="fa-solid fa-cloud-bolt err-ico"></i>
+                      <div class="item-t">Couldn't load products</div>
+                      <span class="retry">Retry</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabbar">
+                  <i class="fa-solid fa-house on"></i><i class="fa-solid fa-cart-shopping"></i><i
+                    class="fa-solid fa-user"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Architecture + stack -->
+            <div class="win win-flow">
+              <div class="flow">
+                <div class="flow-title">Clean Architecture flow</div>
+                <div class="flow-row">
+                  <span class="node n1">UI</span><span class="arrow">&rsaquo;</span>
+                  <span class="node n2">Cubit</span><span class="arrow">&rsaquo;</span>
+                  <span class="node n3">Repository</span><span class="arrow">&rsaquo;</span>
+                  <span class="node n4">API</span>
+                </div>
+                <div class="flow-tags"><span>Dio</span><span>Hive</span><span>Stripe</span><span>TFLite</span></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH MARQUEE -->
+    <div class="marquee" role="group" aria-label="Technologies I work with">
+      <div class="marquee-track">
+        <ul class="marquee-set">
+          <li>Flutter</li>
+          <li>Dart</li>
+          <li>Bloc / Cubit</li>
+          <li>Clean Architecture</li>
+          <li>Provider</li>
+          <li>Riverpod</li>
+          <li>GetX</li>
+          <li>Firebase</li>
+          <li>Cloud Firestore</li>
+          <li>REST APIs</li>
+          <li>Stripe</li>
+          <li>Paymob</li>
+          <li>PayPal</li>
+          <li>TensorFlow Lite</li>
+          <li>SQLite</li>
+          <li>Hive</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>Postman</li>
+          <li>AdMob</li>
+          <li>Git</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="avatar" data-reveal="left">
+          <span class="avatar-fallback" aria-hidden="true">MK</span>
+          <img src="avatar.jpg" alt="Portrait of Mina Kamil" width="168" height="168">
+        </div>
+        <div data-stagger>
+          <h2 class="h-line">About me</h2>
+          <p class="body-lg">I'm a Flutter developer who focuses on scalable, production-ready mobile apps. I structure
+            projects with Clean Architecture and Bloc/Cubit (or Riverpod and GetX when the project calls for it),
+            connect them to REST APIs and Firebase, and build small Node.js and Express backends when an app needs one.
+          </p>
+          <p class="body-lg">Recent work includes AI-powered features such as plant disease analysis from photos,
+            payment flows with Stripe, PayPal and Paymob, and apps published on Google Play.</p>
+          <p class="aside-line"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Outside of work: reading,
+            coding and music.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-head" data-stagger>
+          <h2 class="h-line">Projects</h2>
+          <p>Client work first, followed by projects where I practiced architecture, state management and integrations.
+          </p>
+        </div>
+
+        <!-- Featured: MyFarm -->
+        <article class="feature feature-green glow" data-reveal>
+          <div class="feature-main">
+            <p class="feature-tag">Client project, Oct 2026 to present</p>
+            <h3>MyFarm: AI plant health and farming assistant</h3>
+            <p class="feature-desc">A Flutter app that identifies plants and analyzes their health from a photo.</p>
+            <ul class="ticks" data-stagger>
+              <li>Analyzes plant images with the Plant.id v3 REST API and shows disease results, confidence scores and
+                localized care information.</li>
+              <li>Built on Clean Architecture with repositories and use cases. Bloc/Cubit and GetX manage state and
+                async flows.</li>
+              <li>Firebase Authentication and Cloud Firestore handle user data and collaborative group notes.</li>
+              <li>Includes Arabic disease information, text-to-speech, weather updates, cached data and task management.
+              </li>
+            </ul>
+          </div>
+          <div class="feature-side">
+            <h4>Built with</h4>
+            <ul class="chips" data-stagger="pop">
+              <li>Flutter</li>
+              <li>Dart</li>
+              <li>REST APIs</li>
+              <li>Plant.id API</li>
+              <li>Firebase Auth</li>
+              <li>Cloud Firestore</li>
+              <li>Bloc/Cubit</li>
+              <li>Hive</li>
+              <li>Clean Architecture</li>
+            </ul>
+            <div class="feature-links">
+              <span class="private-note"><i class="fa-solid fa-lock" aria-hidden="true"></i> Private client project,
+                source code is not public</span>
+              <a class="link" href="mailto:minakamil.dev8@gmail.com?subject=MyFarm%20walkthrough"><i
+                  class="fa-solid fa-envelope" aria-hidden="true"></i> Ask for a walkthrough</a>
+              <p class="small">An earlier version uses an on-device plant disease classifier built with TensorFlow Lite
+                and Firebase.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Featured: Bible Learning & Quiz -->
+        <article class="feature feature-blue glow" data-reveal>
+          <div class="feature-main">
+            <p class="feature-tag">Client project, Sep 2025</p>
+            <h3>Bible Learning &amp; Quiz App</h3>
+            <p class="feature-desc">A cross-platform app for Bible reading, interactive quizzes and exam management,
+              with a leaderboard.</p>
+            <ul class="ticks" data-stagger>
+              <li>Email/password and Google sign-in, user profiles and role-based access.</li>
+              <li>Bible-verse activities, exam scheduling and user result tracking.</li>
+              <li>Management screens for quiz content and organizational data, including churches and chapters.</li>
+              <li>Excel export for exam results, audio feedback and responsive Arabic interfaces.</li>
+            </ul>
+          </div>
+          <div class="feature-side">
+            <h4>Built with</h4>
+            <ul class="chips" data-stagger="pop">
+              <li>Flutter</li>
+              <li>Dart</li>
+              <li>Firebase Auth</li>
+              <li>Cloud Firestore</li>
+              <li>GetX</li>
+              <li>Google Sign-In</li>
+              <li>Excel export</li>
+              <li>Audio playback</li>
+            </ul>
+            <div class="feature-links">
+              <a class="badge" href="https://play.google.com/store/apps/details?id=com.minakamil.dev.aner_astaner"
+                target="_blank" rel="noopener"><i class="fa-brands fa-google-play" aria-hidden="true"></i> Get it on
+                Google Play</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="projects-head" data-reveal>
+          <h3 class="subhead">All projects <span class="count" data-projects-count>20</span></h3>
+          <div class="filters" role="group" aria-label="Filter projects"></div>
+        </div>
+
+        <div class="mini-grid" id="project-grid" aria-live="polite">
+          <noscript>
+            <p class="small">Enable JavaScript to browse the project list, or see everything on <a class="link"
+                href="https://github.com/Mina8496?tab=repositories">GitHub</a>.</p>
+          </noscript>
+        </div>
+
+        <div class="more-wrap">
+          <button class="btn btn-ghost" id="more-btn" type="button" hidden>Show all projects</button>
+          <a class="btn btn-ghost" href="https://github.com/Mina8496?tab=repositories" target="_blank" rel="noopener"><i
+              class="fa-brands fa-github" aria-hidden="true"></i> View all on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head" data-stagger>
+          <h2 class="h-line">Experience and education</h2>
+        </div>
+
+        <ol class="timeline" data-stagger="left">
+          <li class="t-item">
+            <div class="t-date">Oct 2026 to present</div>
+            <div class="t-body">
+              <h3>MyFarm, client project</h3>
+              <p>Plant health and farming assistant with Plant.id analysis, Firebase and Clean Architecture.</p>
+            </div>
+          </li>
+          <li class="t-item">
+            <div class="t-date">Sep 2025</div>
+            <div class="t-body">
+              <h3>Bible Learning &amp; Quiz App, client project</h3>
+              <p>Published on Google Play with quizzes, exam management and a leaderboard. <a class="link"
+                  href="https://play.google.com/store/apps/details?id=com.minakamil.dev.aner_astaner" target="_blank"
+                  rel="noopener">Open on Google Play</a></p>
+            </div>
+          </li>
+          <li class="t-item t-main">
+            <div class="t-date">2024 to present</div>
+            <div class="t-body">
+              <h3>Freelance Flutter Developer</h3>
+              <ul class="ticks">
+                <li>Built and published Flutter apps on Google Play: a plant health and farming assistant and a quiz app
+                  with a leaderboard.</li>
+                <li>Integrated REST APIs with authentication and payment gateways (Stripe, PayPal, Paymob).</li>
+                <li>Structured apps with Clean Architecture and Bloc/Cubit or Riverpod, depending on the project.</li>
+                <li>Built an on-device plant disease classifier with TensorFlow Lite and Firebase.</li>
+                <li>Worked with backend developers on API design and integration.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="t-item">
+            <div class="t-date">Sep 2019 to Jan 2023</div>
+            <div class="t-body">
+              <h3>B.Sc. in Computers and Information</h3>
+              <p>Arab Open University (AOU Egypt). Grade: Very Good.</p>
+              <a class="link cert-link"
+                href="https://drive.google.com/file/d/1MFIaQgvamXVSYsL1gyvDwBUUpeiGmHJT/view?usp=sharing"
+                target="_blank" rel="noopener"><i class="fa-solid fa-certificate" aria-hidden="true"></i> View
+                certificate</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head" data-stagger>
+          <h2 class="h-line">Skills</h2>
+        </div>
+
+        <div class="skill-grid" data-stagger>
+          <div class="skill-group">
+            <h3>Mobile</h3>
+            <ul class="chips" data-stagger="pop">
+              <li class="strong">Flutter</li>
+              <li class="strong">Dart</li>
+              <li>Kotlin (Android native)</li>
+              <li>iOS (intermediate)</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Architecture and state</h3>
+            <ul class="chips" data-stagger="pop">
+              <li class="strong">Clean Architecture</li>
+              <li class="strong">Bloc/Cubit</li>
+              <li>Provider</li>
+              <li>Riverpod</li>
+              <li>GetX</li>
+              <li>Repository pattern</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Backend and data</h3>
+            <ul class="chips" data-stagger="pop">
+              <li class="strong">Firebase</li>
+              <li class="strong">REST APIs</li>
+              <li>Cloud Firestore</li>
+              <li>SQLite</li>
+              <li>Hive</li>
+              <li>Node.js and Express (basics)</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Integrations</h3>
+            <ul class="chips" data-stagger="pop">
+              <li>Stripe</li>
+              <li>PayPal</li>
+              <li>Paymob</li>
+              <li>TensorFlow Lite</li>
+              <li>Plant.id API</li>
+              <li>Dio</li>
+              <li>Postman</li>
+              <li>AdMob</li>
+              <li>Git and GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div data-stagger="left">
+          <h2 class="h-line">Have an app in mind?</h2>
+          <p class="body-lg">I'm taking freelance Flutter projects and can start right away. Send me a short description
+            of what you need and I'll reply with questions or an estimate.</p>
+          <div>
+            <a class="btn btn-primary btn-pulse" href="mailto:minakamil.dev8@gmail.com" data-magnetic><i
+                class="fa-solid fa-envelope" aria-hidden="true"></i> Email me</a>
+            <a class="btn btn-ghost" href="Mina_Kamil_Software_Developer_Flutter_CV.pdf" download data-magnetic><i
+                class="fa-solid fa-download" aria-hidden="true"></i> Download CV</a>
+          </div>
+        </div>
+
+        <ul class="contact-list" data-stagger="right">
+          <li class="glow">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <div><span>Email</span><a href="mailto:minakamil.dev8@gmail.com">minakamil.dev8@gmail.com</a></div>
+          </li>
+          <li class="glow">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <div><span>Phone</span><a href="tel:+201289925152">+20 128 992 5152</a></div>
+          </li>
+          <li class="glow">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            <div><span>LinkedIn</span><a href="https://www.linkedin.com/in/mina-kamil/" target="_blank"
+                rel="noopener">linkedin.com/in/mina-kamil</a></div>
+          </li>
+          <li class="glow">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <div><span>GitHub</span><a href="https://github.com/Mina8496" target="_blank"
+                rel="noopener">github.com/Mina8496</a></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span data-year>2026</span> Mina Kamil Fahmy. New Cairo, Egypt.</p>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
